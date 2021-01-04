@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ArticleTableView" customModule="StateMachineDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jwo-YA-4L3">
+                    <rect key="frame" x="0.0" y="124" width="414" height="772"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsr-yd-Uor">
+                    <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新聞列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYi-5y-gtY">
+                            <rect key="frame" x="172.5" y="29.5" width="69.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                    <constraints>
+                        <constraint firstItem="aYi-5y-gtY" firstAttribute="centerX" secondItem="Dsr-yd-Uor" secondAttribute="centerX" id="6UC-fb-K37"/>
+                        <constraint firstItem="aYi-5y-gtY" firstAttribute="centerY" secondItem="Dsr-yd-Uor" secondAttribute="centerY" id="GHT-0b-MFf"/>
+                        <constraint firstAttribute="height" constant="80" id="IvP-4U-QJL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jwo-YA-4L3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4s7-x2-Czj"/>
+                <constraint firstItem="Jwo-YA-4L3" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="AoV-Cy-tiL"/>
+                <constraint firstItem="Dsr-yd-Uor" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LoU-Yx-k5i"/>
+                <constraint firstItem="Dsr-yd-Uor" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gjV-rV-TJo"/>
+                <constraint firstItem="Jwo-YA-4L3" firstAttribute="top" secondItem="Dsr-yd-Uor" secondAttribute="bottom" id="pnk-v2-i63"/>
+                <constraint firstAttribute="bottom" secondItem="Jwo-YA-4L3" secondAttribute="bottom" id="w6X-pI-iWD"/>
+                <constraint firstItem="Dsr-yd-Uor" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="x3G-6B-gwh"/>
+            </constraints>
+            <connections>
+                <outlet property="tableView" destination="Jwo-YA-4L3" id="wad-Dg-OtR"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

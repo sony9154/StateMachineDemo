@@ -19,6 +19,10 @@
 		5D774EFF259C56FB0001FB02 /* ArticlesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D774EFE259C56FB0001FB02 /* ArticlesState.swift */; };
 		5D774F02259C577D0001FB02 /* ErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D774F01259C577D0001FB02 /* ErrorState.swift */; };
 		5D774F05259C61150001FB02 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D774F04259C61150001FB02 /* Article.swift */; };
+		5D858F6A25A2F86800954675 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858F6925A2F86800954675 /* EmptyView.swift */; };
+		5D858F6D25A2F8B600954675 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D858F6C25A2F8B600954675 /* EmptyView.xib */; };
+		5D858F7025A309F100954675 /* ArticleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858F6F25A309F100954675 /* ArticleTableView.swift */; };
+		5D858F7325A30A0000954675 /* ArticleTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D858F7225A30A0000954675 /* ArticleTableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		5D774EFE259C56FB0001FB02 /* ArticlesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesState.swift; sourceTree = "<group>"; };
 		5D774F01259C577D0001FB02 /* ErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorState.swift; sourceTree = "<group>"; };
 		5D774F04259C61150001FB02 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		5D858F6925A2F86800954675 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		5D858F6C25A2F8B600954675 /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
+		5D858F6F25A309F100954675 /* ArticleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableView.swift; sourceTree = "<group>"; };
+		5D858F7225A30A0000954675 /* ArticleTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 		5D774F16259C687E0001FB02 /* States */ = {
 			isa = PBXGroup;
 			children = (
+				5D858F6425A2F7B600954675 /* View */,
 				5D774EF8259C2F420001FB02 /* EmptyState.swift */,
 				5D774EFB259C55F80001FB02 /* LoadingState.swift */,
 				5D774EFE259C56FB0001FB02 /* ArticlesState.swift */,
@@ -99,6 +108,17 @@
 				5D774F04259C61150001FB02 /* Article.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5D858F6425A2F7B600954675 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D858F6925A2F86800954675 /* EmptyView.swift */,
+				5D858F6C25A2F8B600954675 /* EmptyView.xib */,
+				5D858F6F25A309F100954675 /* ArticleTableView.swift */,
+				5D858F7225A30A0000954675 /* ArticleTableView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +178,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D858F7325A30A0000954675 /* ArticleTableView.xib in Resources */,
+				5D858F6D25A2F8B600954675 /* EmptyView.xib in Resources */,
 				5D774EED259C2B460001FB02 /* LaunchScreen.storyboard in Resources */,
 				5D774EEA259C2B460001FB02 /* Assets.xcassets in Resources */,
 				5D774EE8259C2B410001FB02 /* Main.storyboard in Resources */,
@@ -177,7 +199,9 @@
 				5D774EF9259C2F420001FB02 /* EmptyState.swift in Sources */,
 				5D774F05259C61150001FB02 /* Article.swift in Sources */,
 				5D774EFF259C56FB0001FB02 /* ArticlesState.swift in Sources */,
+				5D858F6A25A2F86800954675 /* EmptyView.swift in Sources */,
 				5D774EE1259C2B410001FB02 /* AppDelegate.swift in Sources */,
+				5D858F7025A309F100954675 /* ArticleTableView.swift in Sources */,
 				5D774F02259C577D0001FB02 /* ErrorState.swift in Sources */,
 				5D774EE3259C2B410001FB02 /* SceneDelegate.swift in Sources */,
 			);

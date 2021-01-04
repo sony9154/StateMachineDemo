@@ -18,30 +18,20 @@ class ArticlesState: ViewControllerState {
     var articles = [Article]()
 
     // 創造一個 UITableView。
-    private lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: view.bounds, style: .plain)
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        return tableView
-    }()
+    private var articleTableView = ArticleTableView.instanceFromNib()
 
     // 將 tableView 顯示出來。
     override func didEnter(from previousState: GKState?) {
-        view.addSubview(tableView)
-        NSLayoutConstraint.activate([
-            view.leadingAnchor.constraint(equalTo: tableView.leadingAnchor),
-            view.topAnchor.constraint(equalTo: tableView.topAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
-        tableView.reloadData()
+        articleTableView.tableView.delegate = self
+        articleTableView.tableView.dataSource = self
+        articleTableView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        view.addSubview(articleTableView)
+        articleTableView.tableView.reloadData()
     }
 
     // 移除 tableView。
     override func willExit(to nextState: GKState) {
-        tableView.removeFromSuperview()
+        articleTableView.removeFromSuperview()
     }
 }
 
