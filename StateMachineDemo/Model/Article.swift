@@ -23,6 +23,6 @@ struct Article : Decodable {
 }
 
 struct Source : Decodable {
-  let id: Int?
+  let id: String?
   let name: String?
 }
